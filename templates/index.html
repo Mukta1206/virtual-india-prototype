@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual india</title>
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual India</title>
+
+  <style>
+    /* ===== Base (Mobile First) ===== */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #F8F8F8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      text-decoration: none;
+      padding: 14px 26px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,123,255,0.4);
+    }
+
+    /* ===== Tablets & Desktop ===== */
+    @media (min-width: 768px) {
+      body {
+        flex-direction: row;
+        gap: 40px;
+      }
+
+      img {
+        max-width: 400px;
+      }
+    }
+  </style>
 </head>
 
-<body
-    style="background-color: #F8F8F8; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+<body>
 
-    <img src="{% static 'images/india.jpg'%}" alt="india">
+  <img src="{% static 'images/india.jpg' %}" alt="India map">
 
-    <a href="/maharashtra" style="
-     display:inline-block;
-     background: linear-gradient(135deg, #007bff, #00c6ff);
-     color: white;
-     text-decoration: none;
-     padding: 12px 25px;
-     font-size: 16px;
-     font-weight: 600;
-     border-radius: 30px;
-     box-shadow: 0 4px 10px rgba(0,123,255,0.3);
-     transition: all 0.3s ease;
-     letter-spacing: 0.5px;
-   " onmouseover="this.style.background='linear-gradient(135deg,#0056b3,#0099cc)';this.style.transform='scale(1.05)';"
-        onmouseout="this.style.background='linear-gradient(135deg,#007bff,#00c6ff)';this.style.transform='scale(1)';">
-        🌄 Explore Incredible Maharashtra
-    </a>
+  <a href="/maharashtra" class="cta-button">
+    🌄 Explore Incredible Maharashtra
+  </a>
 
 </body>
-
 </html>
