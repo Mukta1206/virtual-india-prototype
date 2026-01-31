@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Sign Up Page{% endblock%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/mukta.css' %}">
+{% block content %}
+
+<div class="card1">
+</div>
+
+<form method = "POST">
+    {% csrf_token %}
+    <img src="{% static 'images/signin.jpg' %}" style=" text-align:left;width: 100%;border-radius: 0%;">
+      <br>
+      <h1>Sign Up Here To Unlock New Destinations</h1>
+      <br>
+      <div class="alert" style="background-color: plum;">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Please note password would be sent to the email.
+      </div>
+      <br>
+      <br>
+      <label for="email"><b>Email :</b></label>
+      <input type="email" name="un" placeholder="Enter Email" required style="padding: 10px; border-radius: 10px;width: 75%;">
+      <br>
+      <br>
+      <input type="submit" value="Sign Up" class="btn" style="padding: 10px;">
+      
+</form>
+<br>
+<br>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+   
+   
+{{ msg }}
+{% endblock %}

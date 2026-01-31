@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block title %}About Us{% endblock %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  text-align: justify;
+  background-color: grey;
+  color: white;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 15px auto 0;
+}
+
+
+
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+<h1 style="text-align: center;">About Us Page</h1>
+<br>
+  <p>This project was independently designed and developed by Mukta Tanksale as a full-stack web prototype to explore how technology, data, and intelligent systems can come together to create meaningful digital experiences.
+The goal of this project is to demonstrate the end-to-end development process from concept and system design to implementation while experimenting with modern web development practices, modular architecture, and API-driven features. It reflects a hands-on approach to learning, problem solving, and building real world applications.
+At its current stage, this platform is a working prototype. Certain features and integrations are intentionally incomplete or simplified, as the focus is on validating ideas, architecture, and user interaction rather than delivering a fully production ready system. The project is designed to evolve over time, with scope for performance improvements, UI enhancements, and additional functionality.
+This prototype represents both a technical and creative exploration, highlighting curiosity, adaptability, and the ability to translate ideas into tangible digital products.
+.</p>
+  <p></p>
+</div>
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Mumbai{% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+{% block content %}
+
+{% block data %}
+{% endblock %}
+
+
+<script>
+    function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+
+
+    const foodDiv = document.getElementById('FOOD');
+    const idFromUrl = window.location.hash.substring(1); 
+    const target = document.getElementById(idFromUrl);
+    
+    if (idFromUrl && foodDiv.contains(target)){
+        document.getElementById('Food-button').click()
+    } else{
+        
+        document.getElementById("defaultOpen").click();
+    }
+
+</script>
+
+
+<div class="footer">
+    <h2>Footer</h2>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% block content %}
+<div class="card1">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 style="font-size: 42;font-family:Papyrus;">Welcome To महाराष्ट्र</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row2">
+    <div class="column2" >
+      <div class="card" >
+        <img src="{% static 'images/mumbai1.jpg' %}" style="width:280px;height:250px;">
+            <div class="container">
+            <h4><b>MUMBAI</b></h4> 
+            <p>Popularly known as Bombay</p>
+            <br>
+            <p><a href="{% url 'mumbai' %}" style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+    <div class="column2" >
+    <div class="card">
+        <img src="{% static 'images/pune2.jpg' %}" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>PUNE</b></h4> 
+            <p>Pune is the second largest city of Maharashtra</p>
+            <br>
+            <p><a href="{% url 'pune' %}" style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+    </div>
+    </div>
+    <div class="column2" >
+        <div class="card">
+          <img src="{% static 'images/nagpur3.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+          <div class="container">
+              <h4><b>Nagpur</b></h4> 
+              <p>The city is famous for it's oranges.</p>
+              <br>
+              <p><a href="{% url 'thane' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+              <br>
+          </div>
+          </div>
+      </div>
+    <div class="column2" >
+      <div class="card">
+        <img src="{% static 'images/thane4.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>Thane</b></h4> 
+            <p>It is also called the city of lakes.</p>
+            <br>
+            <p><a href="{% url 'thane' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+</div> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row2">
+    <div class="column2" >
+      <div class="card">
+        <img src="{% static 'images/nashik5.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+            <div class="container">
+            <h4><b>Nashik </b></h4> 
+            <p> Nashik is The Wine Capital of India</p>
+            <br>
+            <p><a href="{% url 'nashik' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+    <div class="column2" >
+    <div class="card">
+        <img src="{% static 'images/aurangabad6.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>Aurangabad</b></h4> 
+            <p>Aurangabadi food is much like Mughlai cuisine </p>
+            <br>
+            <p><a href="{% url 'aurangabad' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+    </div>
+    </div>
+    <div class="column2" >
+        <div class="card">
+        <img src="{% static 'images/solapur7.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>Solapur</b></h4> 
+            <p>It was pronounced as Sholapur</p>
+            <br>
+            <p><a href="{% url 'solapur' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+    <div class="column2" >
+      <div class="card">
+        <img src="{% static 'images/kolhapur8.jpg' %}" alt="Avatar" style="width:280px;height:250px">
+        <div class="container">
+            <h4><b>Kolhapur</b></h4> 
+            <p>Situated on the banks of river Panchganga</p>
+            <br>
+            <p><a href="{% url 'kolhapur' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+</div> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="row2">
+    <div class="column2" >
+      <div class="card">
+        <img src="{% static 'images/satara9.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+            <div class="container">
+            <h4><b>Satara</b></h4> 
+            <p>Satara city is surrounded by seven mountains</p>
+            <br>
+            <p><a href="{% url 'satara' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+    <div class="column2" >
+    <div class="card">
+        <img src="{% static 'images/wardha10.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>Wardha</b></h4> 
+            <p>Wardha gets its name from the Wardha River</p>
+            <br>
+            <p><a href="{% url 'wardha' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+    </div>
+    </div>
+    <div class="column2" >
+        <div class="card">
+        <img src="{% static 'images/ratnagiri11.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>Ratnagiri</b></h4> 
+            <p>It is a part of Konkan division of Maharashtra</p>
+            <br>
+            <p><a href="{% url 'ratnagiri' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+    <div class="column2" >
+      <div class="card">
+        <img src="{% static 'images/amravati12.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+            <h4><b>Amravati</b></h4> 
+            <p>The district is home for Melghat Tiger Reserve</p>
+            <br>
+            <p><a href="{% url 'amravati' %}" class=button style="color: white;padding: 9px;text-decoration: none;background-color: black;">Learn More</a></p>
+            <br>
+        </div>
+        </div>
+    </div>
+</div> 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+  
+
+{% endblock %}

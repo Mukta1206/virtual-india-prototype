@@ -1,0 +1,507 @@
+{% extends 'core.html' %}
+{% load static %}
+
+{% block data%}
+
+<div class="card1">
+</div>
+<br>
+<h1 style="font-size: 30px;font-family: papyrus;">Mumbai </h1>
+<div class="header">
+  <img src="{% static 'images/mumba.jpg' %}" style="height:90%;width: 100%;">
+</div>
+
+
+<button class="tablink" onclick="openPage('FOOD', this, 'orange')" id="Food-button"
+  style="width: 20%;background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;">FOOD</button>
+<button class="tablink" onclick="openPage('PLACES TO VISIT', this, 'orange')" id="defaultOpen"
+  style="width: 20%;background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;">PLACES
+  TO VISIT</button>
+<button class="tablink" onclick="openPage('CULTURE', this, 'orange')"
+  style="width: 20%;background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;">CULTURE</button>
+<button class="tablink" onclick="openPage('HISTORY', this, 'orange')"
+  style="width: 20%;background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;">HISTORY</button>
+<button class="tablink" onclick="openPage('TRANSPORT', this, 'orange')"
+  style="width: 20%;background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;padding: 14px 16px;">TRANSPORT</button>
+
+
+
+
+
+
+
+<div id="PLACES TO VISIT" class="tabcontent" style="color: black;padding: 100px 20px;height: 100%;">
+  <h3 style="text-align: left; font-family: papyrus;font-size: 40px;font-style: bold;">PLACES TO VISIT</h3>
+  <br>
+  <br>
+  <img src="{% static 'images/ptv.jpg' %}" style="width:300px;height:180px;float: left;padding-right: 20px;">
+  <h2 style="text-align: left;" id="gate-way-of-india">GATE WAY OF INDIA</h2>
+  <p 
+    style="text-align:left;font-family:  Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Gateway of India,
+    the best place to visit in Mumbai, was built in 1924 by George Willet to honor the visit of King George V and Queen
+    Mary to Mumbai. Visit this place in the early morning or late evening hours to enjoy the cool breeze of the sea with
+    your family sans the crowd. Located next to the iconic Taj Mahal Palace and facing the vast Arabian Sea, the Gateway
+    of India leaves you spellbound in every way possible. Take a ferry ride offered here to experience a stupendous view
+    of this monument right from the sea and you can also visit other main attractions nearby.And the best part? You
+    don’t have to spend a penny to enjoy the beauty of this iconic monument which is often called the Taj Mahal of
+    Mumbai. And the city has many such places that you can enjoy free of cost.</p>
+  <br>
+  <br>
+  <br>
+  <img src="{% static 'images/pvt2.jpg' %}"
+    style="width:300px;height:200px;float: right;padding-right: 10px;padding-top: 20px;padding-left: 10px;">
+  <h2 style="text-align: left;" id="sanjay-gandhi-national-park">SANJAY GANDHI NATIONAL PARK</h2>
+  <p style="text-align:left;font-family: Georgia, 'Times New Roman', Times, serif;">Sprawling over an area of 104 sq.
+    km. of land, this is one of the most-visited national parks in Asia and because of this, I give it the 2nd spot
+    among all the best places to visit in Mumbai. With all sorts of fun activities, this park can surely be a family
+    entertainer. You can watch the big cats of the park close enough in a safari cage and have a fun day boating in the
+    artificial lake in the park. Take the forest road or stairs and hike towards the Gandhi Tekdi, a memorial built in
+    the memory of Mahatma Gandhi. The toy train, Van Rani, is another popular attraction here, especially among kids.
+    You can also visit the 2000-years-old Kanheri Caves to capture the Buddha relics. The undisturbed natural trails and
+    the Jain Temple in the forest are also sure to make your visit a memorable one.</p>
+  <br>
+  <br>
+  <br>
+  <img src="{% static 'images/pvt3.jpg' %}"
+    style="width:300px;height:180px;float: left;padding-right: 20px;padding-top: 10px;">
+  <h2 style="text-align: left;" id="siddhivinayak-temple">SIDDHIVINAYAK TEMPLE</h2>
+  <p style="text-align:left;font-family: Georgia, 'Times New Roman', Times, serif;">One of the most frequented temples
+    in Mumbai, the Siddhivinayak Temple is dedicated to Lord Ganesh. Devotees from across India including famous
+    personalities from Bollywood and sports throng the temple to seek the blessings of Siddhivinayak Ganapati. The
+    auspicious idol of Lord Ganesha is carved out in a single black stone with the trunk bent towards right making it
+    one-of-its-kind. he Shree Siddhivinayak Ganapati Mandir is a Hindu temple dedicated to Lord Shri Ganesh. It is
+    located in Prabhadevi, Mumbai, Maharashtra, India.It was originally built by Laxman Vithu and Deubai Patil on 19
+    November 1801. It is one of the richest temples in India.The temple has a small mandap with the shrine for Siddhi
+    Vinayak. The wooden doors to the sanctum are carved with images of the Ashtavinayak. The inner roof of the sanctum
+    is plated with gold, and the central statue is of Ganesha. The exterior of the temple consists of a dome which is
+    lit up with multiple colors in the evenings and they keep changing every few hours.</p>
+  <br>
+  <br>
+  <br>
+  <img src="{% static 'images/pvt4.jpg' %}"
+    style="width:300px;height:200px;float: RIGHT;padding-right: 10px;padding-top: 20px;">
+  <h2 style="text-align: left;" id="chhatrapati-shivaji-terminus-(cst)">CHHATRAPATI SHIVAJI TERMINUS (CST)</h2>
+  <p style="text-align:left;font-family: Georgia, 'Times New Roman', Times, serif;">Chatrapati Shivaji Terminus is
+    another UNESCO World Heritage Site situated right in the heart of Mumbai. Built in the year 1888, during the British
+    colonial period, this edifice exemplifies the Victorian-Gothic style of architecture. While you are here, don’t
+    forget to take a photograph with your family and kids. And guess what, the magnificent CST is the most photographed
+    building in India after Taj Mahal!.The terminus was designed by British born architectural engineer Frederick
+    William Stevens from an initial design by Axel Haig, in an exuberant Italian Gothic style. Its construction began in
+    1878, in a location south of the old Bori Bunder railway station,and was completed in 1887, the year marking 50
+    years of Queen Victoria's rule.In March 1996 the station's name was changed to "Chhatrapati Shivaji Terminus" (with
+    station code CST) after Shivaji, the 17th-century warrior king who employed guerrilla tactics to contest the
+    declining Mughal Empire and found a new state in the western Marathi-speaking regions of the Deccan Plateau. </p>
+  <br>
+  <br>
+  <br>
+  <img src="{% static 'images/pvt5.jpg' %}" style="width:300px;height:180px;float: left;padding-right: 20px;">
+  <h2 style="text-align: left;" id="shri-mahalaxmi-temple">SHRI MAHALAXMI TEMPLE</h2>
+  <p style="text-align:left;font-family: Georgia, 'Times New Roman', Times, serif;">Built in 1831 by a Hindu merchant
+    named Dhakji Dadaji, this beautiful temple attracts numerous devotees daily, and more so on Diwali and Navaratra. On
+    these two occasions, Shri Mahalakshmi is believed to come alive and grant the wishes of her worshippers. The other
+    two deities housed here are Shri Mahasaraswati and Shri Mahakali. The vernacular domestic architecture of the temple
+    and its unique surroundings, dotted with sweet and flower shops, make Mahalakshmi Temple an integral part of
+    Maharashtra tourism.</p>
+</div>
+
+
+
+
+
+<div id="TRANSPORT" class="tabcontent" style="color: black;padding: 100px 20px;height: 100%;">
+  <h3>TRANSPORT</h3>
+  <p style="text-align:left;font-family:  Georgia, 'Times New Roman', Times, serif;font-size: 20px;">Public transport
+    Public transport in Mumbai
+    Public transport systems in Mumbai include the Mumbai Suburban Railway, Monorail, Metro, Brihanmumbai Electric
+    Supply and Transport (BEST) buses, black-and-yellow meter taxis, auto rickshaws and ferries. Suburban railway and
+    BEST bus services together accounted for about 88% of the passenger traffic in 2008. Auto rickshaws are allowed to
+    operate only in the suburban areas of Mumbai, while taxis are allowed to operate throughout Mumbai, but generally
+    operate in South Mumbai. Taxis and rickshaws in Mumbai are required by law to run on compressed natural gas (CNG),
+    and are a convenient, economical, and easily available means of transport.
+
+  <h2>Railway</h2>
+  The Mumbai Suburban Railway, popularly referred to as Locals forms the backbone of the city's transport system. It is
+  operated by the Central Railway and Western Railway zones of the Indian Railways. Mumbai's suburban rail systems
+  carried a total of 6.3 million passengers every day in 2007.Trains are overcrowded during peak hours, with nine-car
+  trains of rated capacity 1,700 passengers, actually carrying around 4,500 passengers at peak hours. The Mumbai rail
+  network is spread at an expanse of 319 route kilometres. 191 rakes (train-sets) of 9 car and 12 car composition are
+  utilised to run a total of 2,226 train services in the city.The Mumbai Monorail and Mumbai Metro have been built and
+  are being extended in phases to relieve overcrowding on the existing network. The Monorail opened in early February
+  2014.The first line of the Mumbai Metro opened in early June 2014.
+  Mumbai is the headquarters of two zones of the Indian Railways: the Central Railway (CR) headquartered at Chhatrapati
+  Shivaji Terminus (formerly Victoria Terminus), and the Western Railway (WR) headquartered at Churchgate. Mumbai is
+  also well connected to most parts of India by the Indian Railways. Long-distance trains originate from Chhatrapati
+  Shivaji Terminus, Dadar, Lokmanya Tilak Terminus, Mumbai Central, Bandra Terminus, Andheri and Borivali.
+
+  <h2>Bus</h2>
+  Mumbai's bus services carried over 5.5 million passengers per day in 2008, which dropped to 2.8 million in 2015.
+  Public buses run by BEST cover almost all parts of the metropolis, as well as parts of Navi Mumbai, Mira-Bhayandar and
+  Thane. The BEST operates a total of 4,608 buses with CCTV cameras installed, ferrying 4.5 million passengers daily
+  over 390 routes. Its fleet consists of single-decker, double-decker, vestibule, low-floor, disabled-friendly,
+  air-conditioned and Euro III compliant diesel and compressed natural gas powered buses. BEST introduced
+  air-conditioned buses in 1998. BEST buses are red in colour, based originally on the Routemaster buses of London.
+  Maharashtra State Road Transport Corporation (MSRTC, also known as ST) buses provide intercity transport connecting
+  Mumbai with other towns and cities of Maharashtra and nearby states. The Navi Mumbai Municipal Transport (NMMT) and
+  Thane Municipal Transport (TMT) also operate their buses in Mumbai, connecting various nodes of Navi Mumbai and Thane
+  to parts of Mumbai.
+  Buses are generally favoured for commuting short to medium distances, while train fares are more economical for longer
+  distance commutes.
+  The Mumbai Darshan is a tourist bus service which explores numerous tourist attractions in Mumbai. Bus Rapid Transit
+  System (BRTS) lanes have been planned throughout Mumbai. Though 88% of the city's commuters travel by public
+  transport, Mumbai still continues to struggle with traffic congestion. Mumbai's transport system has been categorised
+  as one of the most congested in the world.
+  <h2>Water</h2>
+  Water transport in Mumbai consists of ferries, hovercraft and catamarans. Services are provided by both government
+  agencies as well as private partners. Hovercraft services plied briefly in the late 1990s between the Gateway of India
+  and CBD Belapur in Navi Mumbai. They were subsequently scrapped due to lack of adequate infrastructure.
+
+  <h2>Road</h2>
+  Mumbai is served by National Highway 48, National Highway 66, National Highway 160 and National Highway 61. The
+  Mumbai–Chennai and Mumbai–Delhi prongs of the Golden Quadrilateral system of National Highways start from the city.
+  The Mumbai-Pune Expressway was the first expressway built in India.
+  The Eastern Freeway was opened in 2013. The Mumbai Nashik Expressway, Mumbai-Vadodara Expressway, are under
+  construction.
+  The Bandra-Worli Sea Link bridge, along with Mahim Causeway, links the island city to the western suburbs. The three
+  major road arteries of the city are the Eastern Express Highway from Sion to Thane, the Sion Panvel Expressway from
+  Sion to Panvel and the Western Express Highway from Bandra to Bhayander.
+  Mumbai has approximately 1,900 km (1,181 mi) of roads.There are five tolled entry points to the city by road.
+  <h2>Air</h2>
+  The Chhatrapati Shivaji Maharaj International Airport (formerly Sahar International Airport) is the main aviation hub
+  in the city and the second busiest airport in India in terms of passenger traffic. It handled 36.6 million passengers
+  and 694,300 tonnes of cargo during FY 2014–2015. An upgrade plan was initiated in 2006, targeted at increasing the
+  capacity of the airport to handle up to 40 million passengers annually and the new terminal T2 was opened in February
+  2014.
+  The proposed Navi Mumbai International airport to be built in the Kopra-Panvel area has been sanctioned by the Indian
+  Government and will help relieve the increasing traffic burden on the existing airport.
+  The Juhu Aerodrome was India's first airport, and now hosts the Bombay Flying Club and a heliport operated by
+  state-owned Pawan Hans.
+
+  <h2>Sea</h2>
+  Mumbai is served by two major ports, Mumbai Port Trust and Jawaharlal Nehru Port Trust, which lies just across the
+  creek in Navi Mumbai.Mumbai Port has one of the best natural harbours in the world, and has extensive wet and dry dock
+  accommodation facilities. Jawaharlal Nehru Port, commissioned on 26 May 1989, is the busiest and most modern major
+  port in India. It handles 55–60% of the country's total containerised cargo. Ferries from Ferry Wharf in Mazagaon
+  allow access to islands near the city.[291]
+  The city is also the headquarters of the Western Naval Command, and also an important base for the Indian Navy.</p>
+</div>
+
+
+
+
+
+<div id="HISTORY" class="tabcontent" style="color: black;padding: 100px 20px;height: 100%;">
+  <h3 style="text-align: left; font-family: papyrus;font-size: 40px;font-style: bold;">HISTORY</h3>
+  <br>
+  <p style="text-align:left;font-family:  Georgia, 'Times New Roman', Times, serif;font-size: 20px;"> <img
+      src="{% static 'images/hist6.jpg' %}"
+      style="width:300px;height:180px;float: left;padding-right: 20px;padding-top: 10px;padding-bottom: 20px;">Mumbai is
+    built on what was once an archipelago of seven islands: Isle of Bombay, Parel, Mazagaon, Mahim, Colaba, Worli, and
+    Old Woman's Island (also known as Little Colaba). It is not exactly known when these islands were first inhabited.
+    Pleistocene sediments found along the coastal areas around Kandivali in northern Mumbai suggest that the islands
+    were inhabited since the South Asian Stone Age. Perhaps at the beginning of the Common Era, or possibly earlier,
+    they came to be occupied by the Koli fishing community.In the 3rd century BCE, the islands formed part of the Maurya
+    Empire, during its expansion in the south, ruled by the Buddhist emperor Ashoka of Magadha. The Kanheri Caves in
+    Borivali were excavated from basalt rock in the first century CE, and served as an important centre of Buddhism in
+    Western India during ancient Times. The city then was known as Heptanesia (Ancient Greek: A Cluster of Seven
+    Islands) to the Greek geographer Ptolemy in 150 CE.The Mahakali Caves in Andheri were cut out between the 1st
+    century BCE and the 6th century CE.
+    Between the 2nd century BCE and 9th century CE, the islands came under the control of successive indigenous
+    dynasties: Satavahanas, Western Satraps, Abhira, Vakataka, Kalachuris, Konkan Mauryas, Chalukyas and Rashtrakutas,
+    before being ruled by the Shilaharas from 810 to 1260. <img src="{% static 'images/hist7.jpg' %}"
+      style="width:300px;height:180px;float: right;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;">Some of
+    the oldest edifices in the city built during this period are the Jogeshwari Caves (between 520 and 525), Elephanta
+    Caves (between the sixth to seventh century), Walkeshwar Temple (10th century), and Banganga Tank (12th century).The
+    Haji Ali Dargah was built in 1431, when Mumbai was under the rule of the Gujarat Sultanate.
+    King Bhimdev founded his kingdom in the region in the late 13th century and established his capital in Mahikawati
+    (present day Mahim).The Pathare Prabhus, among the earliest known settlers of the city, were brought to Mahikawati
+    from Saurashtra in Gujarat around 1298 by Bhimdev. The Delhi Sultanate annexed the islands in 1347–48 and controlled
+    it until 1407. During this time, the islands were administered by the Muslim Governors of Gujarat, who were
+    appointed by the Delhi Sultanate.The islands were later governed by the independent Gujarat Sultanate, which was
+    established in 1407. The Sultanate's patronage led to the construction of many mosques, prominent being the Haji Ali
+    Dargah in Worli, built in honour of the Muslim saint Haji Ali in 1431. From 1429 to 1431, the islands were a source
+    of contention between the Gujarat Sultanate and the Bahmani Sultanate of Deccan. In 1493, Bahadur Khan Gilani of the
+    Bahmani Sultanate attempted to conquer the islands but was defeated..</p>
+
+  <br>
+  <h2 style="text-align: left;" id="Portuguese and British rule"> Portuguese and British rule</h2>
+  <p style="text-align:left;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 20px;">
+    <img src="{% static 'images/hist4.jpg' %}"
+      style="width:300px;height:180px;float: left;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;">History
+    of Bombay under Portuguese rule (1534–1661) and History of Bombay under British rule.The Madh Fort built by the
+    Portuguese, was one of the most important forts in Salsette.The Mughal Empire, founded in 1526, was the dominant
+    power in the Indian subcontinent during the mid-16th century.Growing apprehensive of the power of the Mughal emperor
+    Humayun, Sultan Bahadur Shah of Gujarat was obliged to sign the Treaty of Bassein with the Portuguese Empire on 23
+    December 1534. According to the treaty, the Seven Islands of Bombay, the nearby strategic town of Bassein and its
+    dependencies were offered to the Portuguese. <img src="{% static 'images/hist3.jpg' %}"
+      style="width:300px;height:180px;float: right;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;">The
+    territories were later surrendered on 25 October 1535.The Portuguese were actively involved in the foundation and
+    growth of their Roman Catholic religious orders in Bombay.They called the islands by various names, which finally
+    took the written form Bombaim. The islands were leased to several Portuguese officers during their regime. The
+    Portuguese Franciscans and Jesuits built several churches in the city, prominent being the St. Michael's Church at
+    Mahim (1534), St. John the Baptist Church at Andheri (1579), St. Andrew's Church at Bandra (1580), and Gloria Church
+    at Byculla (1632). The Portuguese also built several fortifications around the city like the Bombay Castle, Castella
+    de Aguada (Castelo da Aguada or Bandra Fort), and Madh Fort. The English were in constant struggle with the
+    Portuguese vying for hegemony over Bombay, as they recognised its strategic natural harbour and its natural
+    isolation from land attacks. By the middle of the 17th century the growing power of the Dutch Empire forced the
+    English to acquire a station in western India. On 11 May 1661, the marriage treaty of Charles II of England and
+    Catherine of Braganza, daughter of King John IV of Portugal, placed the islands in possession of the English Empire,
+    as part of Catherine's dowry to Charles. However, Salsette, Bassein, Mazagaon, Parel, Worli, Sion, Dharavi, and
+    Wadala still remained under Portuguese possession. From 1665 to 1666, the English managed to acquire Mahim, Sion,
+    Dharavi, and Wadala.
+    Two views of the English fort in Bombay, c. 1665.
+    <img src="{% static 'images/hist1.jpg' %}"
+      style="width:300px;height:180px;float: left;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;">From 1782
+    onwards, the city was reshaped with large-scale civil engineering projects aimed at merging all the seven islands of
+    Bombay into a single amalgamated mass by way of a causeway called the Hornby Vellard, which was completed by 1784.
+    In 1817, the British East India Company under Mountstuart Elphinstone defeated Baji Rao II, the last of the Maratha
+    Peshwa in the Battle of Khadki. Following his defeat, almost the whole of the Deccan Plateau came under British
+    suzerainty, and was incorporated into the Bombay Presidency. The success of the British campaign in the Deccan
+    marked the end of all attacks by native powers.By 1845, the seven islands coalesced into a single landmass by the
+    Hornby Vellard project via large scale land reclamation. On 16 April 1853, India's first passenger railway line was
+    established, connecting Bombay to the neighbouring town of Thana (now Thane). During the American Civil War
+    (1861–1865), the city became the world's chief cotton-trading market, resulting in a boom in the economy that
+    subsequently enhanced the city's stature.The opening of the Suez Canal in 1869 transformed Bombay into one of the
+    largest seaports on the Arabian Sea.In September 1896, Bombay was hit by a bubonic plague epidemic where the death
+    toll was estimated at 1,900 people per week. About 850,000 people fled Bombay and the textile industry was adversely
+    affected. While the city was the capital of the Bombay Presidency, the Indian independence movement fostered the
+    Quit India Movement in 1942 and the Royal Indian Navy mutiny in 1946.
+  </p>
+
+  <br>
+  <h2 style="text-align: left;" id="Independent India"> Independent India</h2>
+  <p style="text-align:left;font-family:  Georgia, 'Times New Roman', Times, serif;font-size: 20px;">
+    History of Bombay in Independent India.Municipal Corporation Building, Bombay in 1950 (Victoria Terminus partly
+    visible on far right)
+    <img src="{% static 'images/hist2.jpg' %}"
+      style="width:300px;height:180px;float: left;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;">After
+    India's independence in 1947. Following the demolition of the Babri Masjid in Ayodhya, the city was rocked by the
+    Hindu-Muslim riots of 1992–93 in which more than 1,000 people were killed. In March 1993, a series of 13 coordinated
+    bombings at several city landmarks by Islamic extremists and the Bombay underworld resulted in 257 deaths and over
+    700 injuries. In 2006, 209 people were killed and over 700 injured when seven bombs exploded on the city's commuter
+    trains. In 2008, a series of ten coordinated attacks by armed terrorists for three days resulted in 173 deaths, 308
+    injuries, and severe damage to several heritage landmarks and prestigious hotels. The three coordinated bomb
+    explosions in July 2011 that occurred at the Opera house, Zaveri Bazaar and Dadar were the latest in the series of
+    terrorist attacks in Mumbai which resulted in 26 deaths and 130 injuries.
+    Mumbai is the commercial capital of India and has evolved into a global financial hub. For several decades it has
+    been the home of India's main financial services, and a focus for both infrastructure development and private
+    investment. From being an ancient fishing community and a colonial centre of trade, Mumbai has become South Asia's
+    largest city and home of the world's most prolific film industry.
+  </p>
+</div>
+
+
+
+<br>
+<br>
+<div id="CULTURE" class="tabcontent" style="color: black;padding: 100px 20px;height: 100%;padding-top: 50px;">
+  <h3 style="text-align: left; font-family: papyrus;font-size: 40px;font-style: bold;">CULTURE</h3>
+  <br>
+  <p style="text-align: left;font-family: Georgia, 'Times New Roman', Times, serif;">Mumbai's culture is a blend of
+    traditional festivals, food, music, and theatres. The city offers a cosmopolitan and diverse lifestyle with a
+    variety of food, entertainment, and night life, available in a form and abundance comparable to that in other world
+    capitals. Mumbai's history as a major trading centre has led to a diverse range of cultures, religions, and cuisines
+    coexisting in the city. This unique blend of cultures is due to the migration of people from all over India since
+    the British period.Mumbai is the birthplace of Indian cinema—Dadasaheb Phalke laid the foundations with silent
+    movies followed by Marathi talkies—and the oldest film broadcast took place in the early 20th century. Mumbai also
+    has a large number of cinema halls that feature Bollywood, Marathi and Hollywood movies.</p>
+
+  <img src="{% static 'images/culture1.jpg' %}"
+    style="width:300px;height:300px;float: left;padding-right: 20px;padding-top: 10px;">
+  <p style="text-align: left;font-family: Georgia, 'Times New Roman', Times, serif;">
+    The Mumbai International Film Festival and the award ceremony of the Filmfare Awards, the oldest and prominent film
+    awards given for Hindi film industry in India, are held in Mumbai. Despite most of the professional theatre groups
+    that formed during the British Raj having disbanded by the 1950s, Mumbai has developed a thriving "theatre movement"
+    tradition in Marathi, Hindi, English, and other regional languages.Contemporary art is featured in both
+    government-funded art spaces and private commercial galleries. The government-funded institutions include the
+    Jehangir Art Gallery and the National Gallery of Modern Art. Built in 1833, the Asiatic Society of Bombay is one of
+    the oldest public libraries in the city. The Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (formerly The Prince of
+    Wales Museum) is a renowned museum in South Mumbai which houses rare ancient exhibits of Indian history.Mumbai has a
+    zoo named Jijamata Udyaan (formerly Victoria Gardens), which also harbor's a garden. The rich literary traditions of
+    the city have been highlighted internationally by Booker Prize winners Salman Rushdie, Aravind Adiga. Marathi
+    literature has been modernized in the works of Mumbai-based authors such as Mohan Apte, Anant Kanekar, and Gangadhar
+    Gadgil, and is promoted through an annual Sahitya Akademi Award, a literary honor bestowed by India's National
+    Academy of Letters.Girgaum Chowpatty beach. Beaches are a popular tourist attraction in the city.
+    <img src="{% static 'images/cul2.jpg' %}"
+      style="width:300px;height:250px;float: right;padding-right: 0px;padding-left: 10px;padding-top: 20px;">Mumbai
+    residents celebrate both Western and Indian festivals. Diwali, Holi, Eid, Christmas, Navratri, Good Friday, Dussera,
+    Moharram, Ganesh Chaturthi, Durga Puja and Maha Shivratri are some of the popular festivals in the city. The Kala
+    Ghoda Arts Festival is an exhibition of a world of arts that encapsulates works of artists in the fields of music,
+    dance, theatre, and films.A week-long annual fair known as Bandra Fair, starting on the following Sunday after 8
+    September, is celebrated by people of all faiths, to commemorate the Nativity of Mary, mother of Jesus, on 8
+    September.The Banganga Festival is a two-day music festival, held annually in the month of January, which is
+    organised by the Maharashtra Tourism Development Corporation (MTDC) at the historic Banganga Tank in Mumbai. The
+    Elephanta Festival—celebrated every February on the Elephanta Islands—is dedicated to classical Indian dance and
+    music and attracts performers from across the country. Public holidays specific to the city and the state include
+    Maharashtra Day on 1 May, to celebrate the formation of Maharashtra state on 1 May 1960, and Gudi Padwa which is the
+    New Year's Day for Marathi people.Beaches are a major tourist attraction in the city. The major beaches in Mumbai
+    are Girgaum Chowpatty, Juhu Beach, Dadar Chowpatty, Gorai Beach, Marve Beach, Versova Beach, Madh Beach, Aksa Beach,
+    and Manori Beach. Most of the beaches are unfit for swimming, except Girgaum Chowpatty and Juhu Beach. Essel World
+    is a theme park and amusement centre situated close to Gorai Beach,and includes Asia's largest theme water park,
+    Water Kingdom. Adlabs Imagica opened in April 2013 is located near the city of Khopoli off the Mumbai-Pune
+    Expressway.
+
+  </p>
+</div>
+
+
+
+
+
+<div id="FOOD" class="tabcontent" style="color:black;padding: 100px 20px;height: 100%;">
+  <h3 style="text-align: left; font-family: papyrus;font-size: 40px;font-style: bold;">FOOD</h3>
+  <p style="text-align: left;font-family: Georgia, 'Times New Roman', Times, serif;">Mumbai has a variety of street
+    food, including the Vada pav, Pav bhaji, Chaat, Idli, Dosa and the local Mumbai sandwich.<br>
+    Mumbai is a hub for various cuisines . It also has some of the best high-end restaurants and also street food to
+    indulge in a sense of luxury to your taste-buds.
+    The list is obiviously endless but here are some of the best places to visit when you are in Mumbai.
+  </p>
+  <div class="row2">
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food2.jpg' %}" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="sardar-pavbhaji"><b>Sardar Pavbhaji</b></h4>
+          <br>
+          <p>Loaction : AC Market Tardeo</p>
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food3.jpg' %}" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="gulshan-e-iran"><b>Gulshan-e-Iran</b></h4>
+          <br>
+          <p>Location : Crawford Market, Mumbai</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food4.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="noor-mohmadd"><b>Noor Mohmadd</b></h4>
+          <br>
+          <p>Location : Bhendi Bazaar, Girgaum</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food5.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="laxmi-balaji-snacks"><b>Laxmi Balaji Snacks</b></h4>
+          <br>
+          <p>Loaction : Goregaon West, Mumbai</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row2">
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food6.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="ice-cream-sandwich-at-k-rustom"><b>Ice Cream Sandwich at K. Rustom </b></h4>
+          <br>
+          <p> Loaction : Nariman Road, Churchgate</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food7.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="royal-falooda-at-badshah"><b>Royal Falooda at Badshah</b></h4>
+          <br>
+          <p>Location : Crawfrod Market, Mumbai</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food8.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="japanese-cheecake-at-daniel-patissier"><b>Japanese Cheesecake at Daniel Patissier</b></h4>
+          <br>
+          <p>Location : Pali Hill, Bandra West</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food9.jpg' %}" alt="Avatar" style="width:280px;height:250px">
+        <div class="container">
+          <h4 id="tandoori-rotis-and-gravy-at-bagdadi"><b>Tandoori Rotis And Gravy at Bagdadi</b></h4>
+          <br>
+          <p>Location : Behind Taj Mahal Hotel, Colaba</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row2">
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/food10.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="theobroma"><b>Theobroma </b></h4>
+          <br>
+          <p> Loaction :Lodha World Towers, Lower Parel</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/f11.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="naturals"><b>Naturals</b></h4>
+          <br>
+          <p>Location : Juhu, Vile Parle West</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/f12.jpg' %}" alt="Avatar" style="width:280px;height:250px;">
+        <div class="container">
+          <h4 id="suzette"><b>Suzette</b></h4>
+          <br>
+          <p>Location : Atlanta Building, Nariman Point</p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="column2">
+      <div class="card">
+        <img src="{% static 'images/f13.jpg' %}" alt="Avatar" style="width:280px;height:250px">
+        <div class="container">
+          <h4 id="pizz-by-the-bay"><b>Pizza By The Bay</b></h4>
+          <br>
+          <p>Location : 143 Marine Drive, Churchgate</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

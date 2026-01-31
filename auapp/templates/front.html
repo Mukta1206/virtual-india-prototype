@@ -1,0 +1,210 @@
+{% extends 'base.html' %}}
+{% load static %}
+{% block title %}Virtual Maharashtra{% endblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+
+{% block content %}
+
+
+<link rel="stylesheet" href="{% static 'css/mukta.css' %}">
+<div class="card1">
+
+</div>
+<div class="row">
+  <div class="column3" >
+    <h2 style="color: black;font-size: 35px;text-align:left;padding-left: 80px;padding-top: 60px;">The perfect place to explore cities in Maharashtra</h2>
+    <br>
+    <h5 style="color: black;font-size: 20px; text-align: left;padding-left: 80px;padding-top: 20px;">Beautiful places to visit and much more</h5>
+    <br>
+    <br>
+    <a href="{% url 'user_login' %}" style="background-color: black;padding: 17px;text-decoration: none;color: white;padding-left: 30px;padding-right:30px;text-align: left;">Login</a>
+  </div>
+  <div class="column3" >
+    <img src="{% static 'images/front.jpg' %}" style="height:600px;width: 580px; padding-top: 20px;
+    animation-delay: 4s;
+    animation-direction: reverse; ">
+    
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="text-align: center;font-family: papyrus;font-size: 28px;">Explore Section</h3>
+<br>
+<br>
+
+<div class="row" style="height: 50%;">
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="{% static 'images/flip1.jpg' %}" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back" style="background-color: white;color: black;">
+      <br>
+      <h1>Kopeshwar Temple</h1> 
+      <br>
+      <p>It is in Kolhapur District. Located at the border of Maharashtra and Karnataka.It is accessible from Sangli as well.</p> 
+      <br>
+      <p>To know more <a href="{% url 'user_login' %}">Login</a></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="{% static 'images/flip2.jpg' %}" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back" style="background-color: white;color: black;">
+        <br>
+        <h1>Satara District</h1> 
+        <br>
+        <p>Satara is famous for the Kaas Plateau, Thoseghar, and a lot of natural sites present in the vicinity of the city.</p> 
+        <br>
+        <p>To know more <a href="{% url 'user_login' %}">Login</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="{% static 'images/flip3.jpg' %}" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back" style="background-color: white;color: black;">
+        <br>
+        <h1>Melghat Tiger Reserve</h1> 
+        <br>
+        <p>Melghat tiger reserve is located in the Amaravati district of Maharashtra.It is 225 km west of Nagpur.</p> 
+        <br>
+        <p>To learn more <a href="{% url 'user_login' %}">Login</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="{% static 'images/flip4.jpg' %}" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back" style="background-color: white;color: black;">
+          <h1>Pithla Bhakri</h1> 
+          <br>
+          <p>Staple food in the households of all the Maharashtrians. Served with raw onion and thecha. </p> 
+          <br>
+          <p>To learn more <a href="{% url 'user_login' %}">Login</a></p>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+<br>
+<br>
+<h2 style="font-family: papyrus; font-size: 32px;">Intresting Facts About Maharashtra</h2>
+<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <q>India’s longest Sea Link Bridge is being built in Mumbai, Maharashtra, which will be 21 Km long.</q>
+  </div>
+  
+  <div class="mySlides">
+    <q>Maharashtra is a lonely state of India on which there are 2 metro cities, one in Mumbai and the other in Pune.</q>
+  </div>
+  
+  <div class="mySlides">
+    <q>Nagpur is a city which is not the capital of any state even though there is a branch of the Reserve Bank of India.</q>
+  </div>
+
+  <div class="mySlides">
+    <q>Aurangabad is called Tourism Capital of Maharashtra.</q>
+  </div>
+
+  <div class="mySlides">
+    <q>According to the legends, it was in Nashik that Lakshman cut of Suparnakha's nose.Hence it is called Nashik.A sanskrit for nose.</q>
+  </div>
+
+  <div class="mySlides">
+    <q>Mumbai local trains carry six million people every day,which is equivalent to the entire population od Israel</q>
+  </div>
+
+  <div class="mySlides">
+    <q>It is believed that badminton was invented in Pune during the british rule.It was called as Poonah or Poona,after the town.</q>
+  </div>
+
+  <div class="mySlides">
+    <q>Maharashtra has the largest proportions of taxpayers in India.</q>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-2)">❮</a>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <a class="next" onclick="plusSlides(2)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+
+
+<div class="footer">
+    <h2>Footer</h2>
+  </div>
+    
+  
+
+
+
+
+
+
+
+
+{{ msg }}
+{% endblock %}

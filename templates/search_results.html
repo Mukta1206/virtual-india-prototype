@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}Search Results{% endblock %}
+{% block content %}
+
+<!-- 🔍 Search Bar -->
+<form action="{% url 'search_results' %}" method="get" style="margin-top:20px; text-align:center;">
+  <input type="text" name="q" placeholder="Search..." value="{{ request.GET.q }}"
+         style="padding:8px; width:250px; border-radius:5px; border:1px solid #ccc;">
+  <button type="submit"
+          style="padding:8px 12px; border:none; background:#007bff; color:white; border-radius:5px;">
+    Search
+  </button>
+</form>
+
+<h2 style="margin-top:40px; text-align:center;">
+  Search Results for "{{ query|title }}"
+</h2>
+
+{% if results %}
+  <p style="text-align:center; color:#555;">{{ count }} results found</p>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px;">
+    {% for r in results %}
+      <div style="width:260px; border:1px solid #ddd; border-radius:10px; overflow:hidden;
+                  box-shadow:0 2px 6px rgba(0,0,0,0.1); background:white;">
+        <div style="padding:15px; text-align:center;">
+
+          <!-- 🏙️ Place or Attraction -->
+          <h4 style="margin-bottom:10px; font-size:18px; font-weight:bold; color:#000;">
+            {{ r.item }}
+          </h4>
+
+          <!-- 📍 City -->
+          <p style="margin:0 0 10px 0; font-size:14px; color:#666;">
+            Found in <strong>{{ r.city }}</strong>
+          </p>
+
+          <!-- 💯 Match Score -->
+          <p style="margin:0 0 15px 0; font-size:12px; color:#999;">
+            Relevance: {{ r.score }}
+          </p>
+
+          <!-- 🔗 Visit Button (link to highlight + anchor) -->
+          <a href="/{{ r.file_path|cut:'.html' }}#{{ r.anchor }}"
+             style="display:inline-block; text-decoration:none; background-color:#007bff;
+                    color:white; padding:8px 15px; border-radius:5px; font-weight:500;">
+            Visit {{ r.city }}
+          </a>
+
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% else %}
+  <p style="margin-top:30px; text-align:center; font-size:16px;">
+    No results found. Try searching for a city or attraction.
+  </p>
+{% endif %}
+
+{% endblock %}

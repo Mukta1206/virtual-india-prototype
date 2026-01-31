@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual india</title>
+    <style>
+    </style>
+</head>
+
+<body
+    style="background-color: #F8F8F8; display:flex; align-items: center; justify-content: center; flex-direction: column;">
+
+    <img src="{% static 'images/india.jpg'%}" alt="india">
+
+    <a href="/maharashtra" style="
+     display:inline-block;
+     background: linear-gradient(135deg, #007bff, #00c6ff);
+     color: white;
+     text-decoration: none;
+     padding: 12px 25px;
+     font-size: 16px;
+     font-weight: 600;
+     border-radius: 30px;
+     box-shadow: 0 4px 10px rgba(0,123,255,0.3);
+     transition: all 0.3s ease;
+     letter-spacing: 0.5px;
+   " onmouseover="this.style.background='linear-gradient(135deg,#0056b3,#0099cc)';this.style.transform='scale(1.05)';"
+        onmouseout="this.style.background='linear-gradient(135deg,#007bff,#00c6ff)';this.style.transform='scale(1)';">
+        🌄 Explore Incredible Maharashtra
+    </a>
+
+</body>
+
+</html>

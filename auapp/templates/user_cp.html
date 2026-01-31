@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Forgot Password{% endblock %}
+{% block content %}
+
+<div class="card1">
+</div>
+<form method="POST">
+    {% csrf_token %}
+    <br>
+    <input type="password" name="pw1" placeholder="enter password" style="padding: 10px; border-radius: 10px;width: 25%;" required>
+    <br><br>
+    <input type="password" name="pw2" placeholder="confirm password" style="padding: 10px; border-radius: 10px;width: 25%;" required>
+    <br><br>
+    <input type="submit" value="Change Password" class="btn" style="padding: 10px;width: 15%;" >
+</form>
+  {{ msg }}
+  {% endblock %}

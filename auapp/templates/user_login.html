@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Login{% endblock %}
+<link rel="stylesheet" href="{% static 'css/mukta.css' %}">
+{% block content %}
+
+<div class="card1">
+</div>
+<br>
+<h1>It's Time To Travel</h1>
+<br>
+<div class="alert" style="background-color:skyblue;">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Please change your password once you log in .
+  </div>
+<form method="POST">
+    {% csrf_token %}
+    <div class="imgcontainer">
+    <img src="{% static 'images/newlogo.jpg' %}" style="text-align: center;margin: 24px 0 12px 0;width: 25%;border-radius: 50%;">
+    </div>
+    <br>
+    <label for="email"><b>Email : </b></label>
+    <input type="email" name="un" placeholder="Enter Email" style="padding: 10px; border-radius: 10px;width: 28%;" required>
+    <br><br>
+    <label for="email"><b>Password :</b></label>
+    <input type="password" name="pw" placeholder="Enter Password" style="padding: 10px; border-radius: 10px;width: 25%;" required>
+    <br><br>
+    <input type="submit" value="Login" class="btn" style="padding: 10px;">
+</form>
+
+
+
+
+
+
+
+
+
+{{ msg }}
+{% endblock %}
