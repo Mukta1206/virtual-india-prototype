@@ -1,0 +1,377 @@
+
+*{font-size:20px;font-family: Arial, Helvetica, sans-serif;margin: 0px; box-sizing: border-box;}
+
+
+
+/* Navigation */
+.topnav-centered {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav-centered a {
+  float: left;
+  color:	#000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.topnav-centered a:hover {
+  
+  background-color: white;
+  color:		#404040;
+}
+
+.topnav-centered a.active {
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer front page */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:white;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+/* Buttons in every page */
+.btn {
+  background-color: black;
+  color: white;
+  width: 100px;
+}
+
+.btn:hover {
+  background-color:white;
+  color: black;
+}
+
+
+
+
+
+
+
+
+/* Card nav bar */
+.card1{
+  background-color: black;
+  padding:1px;
+  margin-top: 1px;}
+
+
+
+
+
+/* Flip-card */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+/* Alerts */
+.alert {
+  padding: 20px;
+  width: 50%;
+  background-color: black; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* profile card on home page */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s;
+  width: 280px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding-top: 40px;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/* columns on front page */
+.column3 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  height: 40%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* Slideshow on front page */
+.slideshow-container {
+  position: relative;
+  background: black;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 0%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q {font-style: italic; color: white;}
+
+.author {color: cornflowerblue;}
+
+
+.containers {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.containers:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+
+
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+  transition: 0.3s;
+  width: 280px;
+}
+
+
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.container {
+  padding: 2px 16px;
+}
